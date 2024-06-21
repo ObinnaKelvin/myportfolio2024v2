@@ -69,8 +69,20 @@ $primaryDark-color: "#58E6D9"; // 80,230,217
                 // border: 1px solid red;
 
                 .caption {
-                    font-size: 50px;
+                    font-size: 35px;
                     font-weight: 800;
+                    height: max-content;
+                    width: 100%;
+                    // border: 1px solid red;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    span {
+                        // border: 1px solid red;
+                        width: max-content;
+                        height: max-content;
+                    }
                 }
             }
 

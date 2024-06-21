@@ -6,8 +6,9 @@
     // border: 1px solid blue;
     padding: 0px 70px;
     background-color: transparent;
-    color: $dark-color;
+    // color: $dark-color;
     position: absolute;
+    z-index: 4;
 
     .wrapper {
         max-width: 1366px;
@@ -36,9 +37,23 @@
         .navLinks {
             display: flex;
             flex-direction: row;
-            gap: 5px;
+            gap: 35px;
             padding: 0px 70px;
             // border: 1px solid black;
+
+            .link {
+
+            }
+
+            .link:hover {
+                border-bottom: 1px solid black ;
+                transition: border-bottom 2s ease;
+                color: black;
+            }
+
+            .link.active {
+                border-bottom: 1px solid black ;
+            }
         }
     
         .social {
@@ -46,12 +61,17 @@
             gap: 20px;
             width: 300px;
             height: 70px;
-            border: 1px solid black;
+            // border: 1px solid black;
     
             img {
                 width: 18px;
                 height: 18px;
             }
+        }
+
+        .mode {
+            // border: 1px solid black;
+            height: 70px;
         }
     }
 }

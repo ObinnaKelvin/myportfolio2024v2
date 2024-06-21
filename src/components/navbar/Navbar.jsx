@@ -2,9 +2,13 @@ import React from 'react'
 import './navbar.scss'
 import { motion } from "framer-motion";
 import Sidebar from '../siderbar/Sidebar';
-import { Link } from "react-router-dom";
+import { BrowserRouter, Link, Route, Navigate, Routes } from "react-router-dom";
+import Blogs from '../../pages/blogs/Blogs';
 
 const Navbar = () => {
+
+    // const router = Link()
+    // console.log(router)
   return (
     <div className='navbar'>
         <Sidebar />
@@ -17,11 +21,10 @@ const Navbar = () => {
                 KobiSoft
             </motion.span> */}
             <div className="navLinks">
-                
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/blogs">Blogs</Link>
+                <Link to="/" className='link active'>Home</Link>
+                <Link to="/about"className='link'>About</Link>
+                <Link to="/projects"className='link'>Projects</Link>
+                <Link to="/blogs"className='link'>Blogs</Link>
             </div>
             <div className="social">
                 {/* <a href="#"><img src='/facebook.png'/></a>
@@ -30,7 +33,9 @@ const Navbar = () => {
                 <a href="#"><img src='/facebook.png'/></a>
                 <a href="#"><img src='/facebook.png'/></a> */}
             </div>
-            <div className="mode"></div>
+            <div className="mode">
+                
+            </div>
         </div>
     </div>
   )
