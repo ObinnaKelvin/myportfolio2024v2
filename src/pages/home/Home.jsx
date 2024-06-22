@@ -28,8 +28,8 @@ function Home() {
     <div className="home">
         <Helmet helmetData={helmetData}>
           <title>Obinna Okere | Home Page</title>
-          <meta property="og:description" name='description' content='Obinna Okere Kelvin Kobisoft, showcasing skills in web development '/>
-          <meta property="og:description" content='Obinna Okere Kelvin Kobisoft, showcasing skills in web development ' />
+          <meta property="og:description" name='description' content='Obinna Okere Kelvin Kobisoft, home page showcasing skills in web development react front end backend developer ui ux '/>
+          <meta property="og:description" content='Obinna Okere Kelvin Kobisoft, home page showcasing skills in web development react front end backend developer ui ux ' />
           {/* <link rel="canonical" href="https://www.tacobell.com/" /> */}
         </Helmet>
         <Cursor />
