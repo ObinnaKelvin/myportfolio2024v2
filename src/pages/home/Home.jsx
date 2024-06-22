@@ -4,8 +4,10 @@ import Navbar from '../../components/navbar/Navbar'
 import './home.scss'
 import { motion } from "framer-motion"
 import * as ImIcons from 'react-icons/im';
+import { Helmet, HelmetProvider, HelmetData } from 'react-helmet-async';
 
 
+const helmetData = new HelmetData({});
 
 const sliderVariants = {
   initial: {
@@ -24,12 +26,18 @@ const sliderVariants = {
 function Home() {
   return (
     <div className="home">
+        <Helmet helmetData={helmetData}>
+          <title>Obinna Okere | Home Page</title>
+          <meta property="og:description" name='description' content='Obinna Okere Kelvin Kobisoft, showcasing skills in web development '/>
+          <meta property="og:description" content='Obinna Okere Kelvin Kobisoft, showcasing skills in web development ' />
+          {/* <link rel="canonical" href="https://www.tacobell.com/" /> */}
+        </Helmet>
         <Cursor />
         <Navbar />
       <section className='hero-wrapper'>
 
         <motion.div variants={sliderVariants} animate="animate" initial="initial" className="slidingTextContainer">
-          UI/UX Front-End Back-End API Database Engineer 
+          Web UI/UX Front-End Back-End API Database Engineer 
         </motion.div>
         <div className="hero-left">
             <img src='./devbgSmall.png' />

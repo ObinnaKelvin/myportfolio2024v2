@@ -23,6 +23,7 @@ function App() {
     //     <Hero />
     //   </section>
     // </div>
+    
     <BrowserRouter>
       <Routes>
           <Route path="/" element={<Home />}/>
