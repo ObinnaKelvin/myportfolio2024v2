@@ -135,4 +135,55 @@
 
     }
 
+    .skills-wrapper {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 150px auto 0px auto;
+        height: max-content;
+        position: relative;
+
+        .skills-wrapper-header {
+            width: 100%;
+            position: absolute;
+            margin: -80px auto 0px auto;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .skills-item {
+            flex: 1;
+            // border: 1px solid red;
+            height: max-content;
+            flex-direction: column;
+            gap: 20px;
+            display: flex;
+
+            .skills-item-header {
+                width: 100%;
+                font-size: 20px;
+                font-weight: 300;
+            }
+
+            .skills-item-details {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .skill-tag {
+                    width: max-content;
+                    padding: 5px 15px 5px 15px;
+                    border-radius: 25px;
+                    /*background-color: #fafafa;*/
+                    /*color: #757575;*/
+                    /*background-color: black;*/
+                    background-color: #7e57c2;;
+                    color: white;
+                    font-size: 12px;
+                    margin: 0px 10px 10px 0px;	
+                }
+            }
+        }
+    }
+
 }

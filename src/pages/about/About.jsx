@@ -4,6 +4,7 @@ import Cursor from '../../components/cursor/Cursor'
 import Navbar from '../../components/navbar/Navbar'
 import { Helmet, HelmetProvider, HelmetData } from 'react-helmet-async';
 import { AnimatedText } from '../../components/animatedText/animatedText';
+import CountUp from 'react-countup';
 
 
 const helmetData = new HelmetData({});
@@ -61,21 +62,71 @@ function About() {
           </div>
           <div className="about-details-item">
                 <div className="item">
-                  <div className="stat">40+</div>
+                  <div className="stat"><CountUp end={40} duration={2} enableScrollSpy={true}/>+</div>
                   <div className="stat-description">Satisfied Clients</div>
                 </div>
                 <div className="item">
-                  <div className="stat">50+</div>
+                  <div className="stat"><CountUp end={50} duration={2} enableScrollSpy={true}/>+</div>
                   <div className="stat-description">Projects Completed</div>
                 </div>
                 <div className="item">
-                  <div className="stat">6+</div>
+                  <div className="stat"><CountUp end={6} duration={2} enableScrollSpy={true}/>+</div>
                   <div className="stat-description">Years Of Experience</div>
                 </div>
           </div>
         </div>
         
 
+      </div>
+
+      <div className="skills-wrapper">
+
+        <div className="skills-wrapper-header">Skills</div>
+        <div className="skills-item">
+          <div className="skills-item-header">General</div>
+          <div className="skills-item-details">
+            <div className="skill-tag">UI/UX</div>
+            <div className="skill-tag">Product Design</div>
+            <div className="skill-tag">Storyboarding</div>
+            <div className="skill-tag">Wireframing</div>
+            <div className="skill-tag">User Research</div>
+            <div className="skill-tag">Usability Testing</div>
+            <div className="skill-tag">Data Analytics</div>
+            <div className="skill-tag">Frontend Development</div>
+            <div className="skill-tag">Fullstack Development</div>
+            <div className="skill-tag">Application Development</div>
+            <div className="skill-tag">Web Development</div>
+            <div className="skill-tag">Software Development</div>
+          </div>
+        </div>
+        <div className="skills-item">
+          <div className="skills-item-header">Design</div>
+          <div className="skills-item-details">
+            <div className="skill-tag">Adobe Creative Suite</div>
+            <div className="skill-tag">Figma</div>
+            <div className="skill-tag">Sketch</div>
+            <div className="skill-tag">Creative Thinking</div>
+            <div className="skill-tag">Motion Graphics</div>
+            <div className="skill-tag">Responsive Design</div>
+          </div>
+        </div>
+        <div className="skills-item">
+          <div className="skills-item-header">Engineering</div>
+          <div className="skills-item-details">
+            <div className="skill-tag">HTML5/CSS3</div>
+            <div className="skill-tag">React JS</div>
+            <div className="skill-tag">Node JS</div>
+            <div className="skill-tag">TypeScript</div>
+            <div className="skill-tag">MongoDB</div>
+            <div className="skill-tag">SQL</div>
+            <div className="skill-tag">Git</div>
+            <div className="skill-tag">Command Line</div>
+            <div className="skill-tag">REST APIs</div>
+            <div className="skill-tag">Next.js</div>
+            <div className="skill-tag">CI/CD</div>
+          </div>
+
+        </div>
       </div>
     </div>
   )
