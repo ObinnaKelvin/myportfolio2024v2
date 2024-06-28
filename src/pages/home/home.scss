@@ -98,7 +98,7 @@ $primaryDark-color: "#58E6D9"; // 80,230,217
                     padding: 0px 50px;
                     background-color: rgb(255, 0, 157);
                     color: white;
-                    cursor: pointer;
+                    // cursor: pointer;
                     font-size: 17px;
                     font-weight: 200;
                     display: flex;
@@ -106,6 +106,17 @@ $primaryDark-color: "#58E6D9"; // 80,230,217
                     justify-content: center;
                     gap: 10px;
                     border-radius: 50px;
+                    
+                    a {
+                        // border: 1px solid black;
+                        // width: 120px;
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        color: white;
+                        cursor: pointer;
+                    }
                 }
 
                 .button-two {

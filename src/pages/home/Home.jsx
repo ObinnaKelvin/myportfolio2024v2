@@ -5,6 +5,7 @@ import './home.scss'
 import { motion } from "framer-motion"
 import * as ImIcons from 'react-icons/im';
 import { Helmet, HelmetProvider, HelmetData } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 
 const helmetData = new HelmetData({});
@@ -55,7 +56,9 @@ function Home() {
             </div>
             <div className="action-buttons">
               <div className="button-one">
-                  Resume <ImIcons.ImDownload style={{width: '20px',height: '20px'}} className='actionIcon'/>
+                <a href='./001 OBINNA OKERE - FULL STACK ENGINEER.pdf' download='001 OBINNA OKERE - FULL STACK ENGINEER.pdf'>
+                    Resume <ImIcons.ImDownload style={{width: '20px',height: '20px'}} className='actionIcon'/>
+                </a>
               </div>
               <div className="button-two">
                   Hire Me

@@ -5,6 +5,7 @@ import Navbar from '../../components/navbar/Navbar'
 import { Helmet, HelmetProvider, HelmetData } from 'react-helmet-async';
 import { AnimatedText } from '../../components/animatedText/animatedText';
 import CountUp from 'react-countup';
+import Experience from '../../components/experience/Experience';
 
 
 const helmetData = new HelmetData({});
@@ -97,6 +98,7 @@ function About() {
             <div className="skill-tag">Application Development</div>
             <div className="skill-tag">Web Development</div>
             <div className="skill-tag">Software Development</div>
+            <div className="skill-tag">Search Engine Optimization (SEO)</div>
           </div>
         </div>
         <div className="skills-item">
@@ -122,12 +124,17 @@ function About() {
             <div className="skill-tag">Git</div>
             <div className="skill-tag">Command Line</div>
             <div className="skill-tag">REST APIs</div>
+            <div className="skill-tag">Firebase</div>
             <div className="skill-tag">Next.js</div>
             <div className="skill-tag">CI/CD</div>
           </div>
 
         </div>
       </div>
+
+
+      <Experience /> 
+
     </div>
   )
 }
